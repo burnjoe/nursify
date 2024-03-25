@@ -7,11 +7,11 @@ Nursify is a dynamic web application designed to cater specifically to nursing s
 
 <div style="display: flex; flex-wrap: wrap;">
   <div style="margin-right: 20px;">
-    <a href="https://github.com/burnjoe"><img src="https://github.com/burnjoe.png" alt="@burnjoe" style="border-radius: 50%; width: 80px;"></a><br>
+    <a href="https://github.com/burnjoe"><img src="https://github.com/burnjoe.png" alt="@burnjoe" style="border-radius: 100%; width: 80px;"></a><br>
   </div>
   
   <div style="margin-right: 20px;">
-    <a href="https://github.com/Jderl"><img src="https://github.com/Jderl.png" alt="@Jderl" style="border-radius: 50%; width: 80px;"></a><br>
+    <a href="https://github.com/Jderl"><img src="https://github.com/Jderl.png" alt="@Jderl" style="border-radius: 100%; width: 80px;"></a><br>
   </div>
 </div>
 
