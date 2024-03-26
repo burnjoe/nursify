@@ -1,0 +1,151 @@
+body {
+    font-size: 4rem;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 2px solid orange;
+}
+
+.character {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-box {
+    width: 200px;
+    height: auto;
+    /* Change height to auto to accommodate variable content */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    /* Change flex direction to column */
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+/* enter-a-name*/
+
+input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    font-size: 3rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    text-align: center;
+    
+
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.btn-start {
+    border: 1px solid white; 
+    border-radius: 4px;
+    font-size: 1.5rem;
+    padding: 8px 16px; 
+    background-color: transparent; 
+    color: white; 
+    margin-top: 2rem;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-start:hover {
+    background-color: rgb(6, 161, 76); /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+/* pname */
+
+span {
+    font-size: 3rem;
+    color: gold;
+}
+
+
+/* pt-info */
+.pInfo{
+    text-align: left;
+}
+
+ul {
+    margin-top: 1rem;
+}
+
+ul li {
+    font-size: 2rem;
+}
+
+.btn-game{
+    border: 1px solid white; 
+    border-radius: 4px;
+    font-size: 1.5rem;
+    padding: 8px 16px; 
+    background-color: transparent; 
+    color: white; 
+    margin-top: 2rem;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-game:hover {
+    background-color: rgb(6, 161, 76); /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    h1 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .flex-box {
+        width: calc(50% - 20px);
+    }
+}
+
+/* Media query for small mobile devices */
+@media (max-width: 480px) {
+    .flex-box {
+        width: calc(100% - 20px);
+    }
+}

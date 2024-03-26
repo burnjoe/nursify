@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nursify Quiz App</title>
+    <link rel="stylesheet" href="/styling/styles.css" />
+    <link rel="stylesheet" href="/styling/game.css" />
+    <link rel="stylesheet" href="/styling/character.css" />
+  </head>
+  <body>
+    <!-- Enter a name  -->
+    <section class="enter-a-name" id="enter-a-name">
+      <div class="container">
+        <input type="text" id="nameInput" placeholder="Enter a name" required />
+        <h2>Enter Your Name :</h2>
+        <a href="#pname" class="btn-start"> Start the Game</a>
+      </div>
+    </section>
+
+    <!-- Player Info -->
+    <section class="pname" id="pname">
+      <div class="container">
+        <p>
+          Hello nurse <span class="playerName"></span>, you are assigned to be
+          the nurse on duty here in (er,opd) department. Your job is to assess
+          the patient/s correctly. Good luck nurse
+          <span class="playerName"></span>!
+        </p>
+        <a href="#er" class="btn-start">Next</a>
+      </div>
+    </section>
+
+    <!-- Task -->
+    <section class="er" id="er">
+      <div class="container">
+        <p>
+          You are assigned to the Emergency Department, there are patients
+          waiting for you.
+        </p>
+        <a href="#pt" class="btn-start">Go to ER</a>
+      </div>
+    </section>
+
+    <!-- Patient -->
+    <section class="pt" id="pt">
+      <div class="container" id="patientSelection">
+        <h1>Select A Patient.</h1>
+        <div class="character">
+          <div class="flex-box">
+            <a href="/character.html" class="character-link">
+              <img src="characters/Ana.png" alt="Ana" />
+              <p id="name">Ana</p>
+            </a>
+          </div>
+          <div class="flex-box">
+            <a href="#patient-info" class="character-link">
+              <img src="characters/May.png" alt="May" />
+              <p id="name">May</p>
+            </a>
+          </div>
+          <div class="flex-box">
+            <a href="#patient-info" class="character-link">
+              <img src="characters/Mark.png" alt="Mark" />
+              <p id="name">Mark</p>
+            </a>
+          </div>
+          <div class="flex-box">
+            <a href="#patient-info" class="character-link">
+              <img src="characters/John.png" alt="John" />
+              <p id="name">John</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="patient-info" id="patient-info">
+      <div class="container">
+        <div class="pt-info">
+          <p class="pInfo">Patient's Name: <span class="name" id="name"> ? </span></p>
+          <p class="pInfo">Age: <span class="age" id="age"> ? </span></p>
+          <p class="pInfo">Sex: <span class="sex" id="sex"> ? </span></p>
+          <p class="pInfo">Chief Complaint:<span class="chief-complaint" id="chief-complaint"> ? </span>
+          <ul>
+            <li>“it hurts when I put weight on my leg.”</li>
+            <li>"abdomen soft and nontender to palpation ”</li>
+            <li>blood pressure 110/68</li>
+            <li>pulses present in lower extremities</li>
+          </ul>
+          </p>
+        </div>
+        <a href="/game.html" class="btn-game">Click to Continue</a>
+      </div>
+    </section>
+
+    <script src="/javascript/character.js"></script>
+ 
+  </body>
+</html>
