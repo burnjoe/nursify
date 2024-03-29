@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="styling/styles.css" />
     <link rel="stylesheet" href="styling/game.css" />
     <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+    <script>
+      if (localStorage.getItem('playerName') === null) {
+        window.location.assign('/')
+      }
+    </script>
   </head>
   <body>
     <div class="container">

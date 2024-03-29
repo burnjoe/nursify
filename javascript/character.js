@@ -31,6 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
         span.textContent = playerName;
       });
 
+      // Save name to local storage
+      localStorage.setItem("playerName", playerName);
+
       console.log("Player name:", playerName);
 
       // Show the next section
