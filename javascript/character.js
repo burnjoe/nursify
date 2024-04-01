@@ -47,52 +47,52 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  const characterLinks = document.querySelectorAll(".character-link");
-  characterLinks.forEach(function (link) {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-      const characterName = this.textContent.trim();
-      console.log("Selected character:", characterName);
+  // const characterLinks = document.querySelectorAll(".character-link");
+  // characterLinks.forEach(function (link) {
+  //   link.addEventListener("click", function (event) {
+  //     event.preventDefault();
+  //     const characterName = this.textContent.trim();
+  //     console.log("Selected character:", characterName);
 
-      // Update patient information section with selected character's details
-      if (patientInfoSection) {
-        switch (characterName) {
-          case "Ana":
-            patientNameSpan.textContent = "Ana";
-            patientAgeSpan.textContent = "15 years old";
-            patientSexSpan.textContent = "Female";
-            break;
-          case "May":
-            patientNameSpan.textContent = "May";
-            patientAgeSpan.textContent = "17 years old";
-            patientSexSpan.textContent = "Female";
-            break;
-          case "Mark":
-            patientNameSpan.textContent = "Mark";
-            patientAgeSpan.textContent = "25 years old";
-            patientSexSpan.textContent = "Male";
-            break;
-          case "John":
-            patientNameSpan.textContent = "John";
-            patientAgeSpan.textContent = "16 years old";
-            patientSexSpan.textContent = "Male";
-            break;
-          default:
-            // Handle default case if necessary
-            break;
-        }
-      }
+  //     // Update patient information section with selected character's details
+  //     if (patientInfoSection) {
+  //       switch (characterName) {
+  //         case "Ana":
+  //           patientNameSpan.textContent = "Ana";
+  //           patientAgeSpan.textContent = "15 years old";
+  //           patientSexSpan.textContent = "Female";
+  //           break;
+  //         case "May":
+  //           patientNameSpan.textContent = "May";
+  //           patientAgeSpan.textContent = "17 years old";
+  //           patientSexSpan.textContent = "Female";
+  //           break;
+  //         case "Mark":
+  //           patientNameSpan.textContent = "Mark";
+  //           patientAgeSpan.textContent = "25 years old";
+  //           patientSexSpan.textContent = "Male";
+  //           break;
+  //         case "John":
+  //           patientNameSpan.textContent = "John";
+  //           patientAgeSpan.textContent = "16 years old";
+  //           patientSexSpan.textContent = "Male";
+  //           break;
+  //         default:
+  //           // Handle default case if necessary
+  //           break;
+  //       }
+  //     }
 
-      // Show the next section
-      const nextSection = currentSection.nextElementSibling;
-      if (nextSection) {
-        currentSection.style.display = "none"; // Hide the current section
-        currentSection = nextSection; // Update current section
-        nextSection.style.display = "block"; // Show the next section
-        nextSection.scrollIntoView({ behavior: "smooth" });
-      }
-    });
-  });
+  //     // Show the next section
+  //     const nextSection = currentSection.nextElementSibling;
+  //     if (nextSection) {
+  //       currentSection.style.display = "none"; // Hide the current section
+  //       currentSection = nextSection; // Update current section
+  //       nextSection.style.display = "block"; // Show the next section
+  //       nextSection.scrollIntoView({ behavior: "smooth" });
+  //     }
+  //   });
+  // });
 
   // Disable scrolling
   window.addEventListener("scroll", function (event) {
