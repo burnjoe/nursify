@@ -62,7 +62,7 @@ let questions = [
 
   // {
   //   question:
-  //     "Ms. Ana reported a fluid-filled skin lesion on her right arm. Upon inspection, the nurse noticed that the lesion size was </= to 1cm. What type of skin lesion does Ms. Ana have? ",
+  //     "Ms. May reported a fluid-filled skin lesion on her right arm. Upon inspection, the nurse noticed that the lesion size was </= to 1cm. What type of skin lesion does Ms. May have? ",
   //   img: "",
   //   choice1: "papule ",
   //   choice1_img: "",
