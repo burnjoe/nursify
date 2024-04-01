@@ -19,6 +19,12 @@ h1 {
     margin-bottom: 4rem;
 }
 
+h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+
 .logo {
     width: 300px;
     height: auto;
@@ -38,6 +44,16 @@ h2 {
     max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-item {
+    margin: 0 8rem;
 }
 
 .flex-column {

@@ -17,7 +17,14 @@
     <div class="container">
       <div id="end" class="flex-center flex-column">
         <h1 id="feedback"></h1>
-        <h1>You got <span id="finalScore" style="font-size: 4rem;">0</span> points</h1>
+        <div class="flex-row">
+          <h3 class="flex-item">Score</h3>
+          <h3 class="flex-item">Correct</h3>
+        </div>
+        <div class="flex-row">
+          <h1 id="finalScore" class="flex-item">0</h1>
+          <h1 id="correctAnswers" class="flex-item">0 / 0</h1>
+        </div>
         <form class="end-form-container">
             <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)">Save </button>
         </form>
