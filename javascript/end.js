@@ -38,5 +38,7 @@ saveHighScore = e => {
     localStorage.setItem('highScores', JSON.stringify(highScores))
     localStorage.removeItem("playerName");
     localStorage.removeItem("mostRecentScore");
+    localStorage.removeItem("correctAnswers");
+    localStorage.removeItem("totalQuestions");
     window.location.assign('/')
 }

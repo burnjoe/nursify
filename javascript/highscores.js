@@ -1,7 +1,8 @@
 const highScoresList = document.querySelector("#highScoresList")
 const highScores = JSON.parse(localStorage.getItem('highScores')) || []
 
-highScoresList.innerHTML = 
+highScoresList.innerHTML = highScores === null ?
 highScores.map(score => {
     return  `<li class="high-score"> ${score.name} - ${score.score}  </li>`
-}).join('')
+}).join('') :
+"No players found"
