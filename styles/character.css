@@ -1,0 +1,268 @@
+body {
+    font-size: 4rem;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 2px solid orange;
+}
+
+.character {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-box {
+    width: 200px;
+    height: auto;
+    /* Change height to auto to accommodate variable content */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    /* Change flex direction to column */
+    justify-content: center;
+    align-items: center;
+}
+
+.image-and-paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Align items vertically */
+}
+
+.image-and-paragraph img {
+    margin-right: 10px;
+}
+
+
+
+.flex-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+/* enter-a-name*/
+
+input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    font-size: 1.8rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    text-align: center;
+
+
+}
+
+/* style="width: 200px; height: auto; padding-bottom: 3px;" */
+.nurse-img1 {
+    width: 300px;
+    height: auto;
+}
+
+.left-right {
+    display: flex;
+    align-items: center;
+}
+
+.left-right img {
+    margin-left: 20px;
+    /* Adjust margin as needed */
+}
+
+
+
+.outer-border {
+    border: 0.5px solid #faf0f0;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    /* Adjust the height as needed */
+    width: 60%;
+    /* Adjust the width as needed */
+    visibility: visible;
+}
+
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+
+.btn-start {
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: white;
+    margin-top: 2rem;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-start:hover {
+    background-color: rgb(6, 161, 76);
+    color: black;
+}
+
+/* pname */
+
+span {
+    font-size: 3rem;
+    color: gold;
+}
+
+
+
+/* pt-info */
+.patient-info {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: flex-start; /* Align items to the top */
+  }
+  
+  .container {
+    width: 100%; /* Ensure the container spans the full width */
+    max-width: 1200px; /* Set a maximum width for the container */
+  }
+  
+  .with-image {
+    display: flex;
+    flex-direction: row; /* Arrange items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between; /* Space evenly between child elements */
+  }
+  
+  .pt-info {
+    flex: 1; /* Allow pt-info to take up remaining space */
+    margin-right: 20px; /* Add margin to create space between pt-info and image */
+  }
+  
+  .chart {
+    width: 300px; /* Keep image width as specified */
+  }
+
+ul {
+    margin-top: 1rem;
+}
+
+ul li {
+    font-size: 2rem;
+}
+
+.btn-game {
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: white;
+    margin-top: 15rem;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-game:hover {
+    background-color: rgb(6, 161, 76);
+    color: black;
+}
+
+
+/* Media query for tablets and small desktops */
+@media (max-width: 768px) {
+    /* General adjustments */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .flex-box {
+        width: calc(50% - 20px);
+    }
+
+    input[type="text"] {
+        width: 300px !important;
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    /* Left-right alignment adjustments */
+    .left-right {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .left-right p {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .left-right img {
+        margin: 0;
+        width: 200px;
+        height: auto;
+    }
+
+    /* Image and paragraph alignment */
+    .image-and-paragraph {
+        display: flex;
+        align-items: center;
+    }
+
+    .image-and-paragraph img {
+        margin-right: 10px;
+    }
+
+    /* Additional adjustments */
+    .eroom {
+        width: 400px;
+    }
+
+    .image-and-paragraph p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Media query for small mobile devices */
+@media (max-width: 480px) {
+    .flex-box {
+        width: calc(100% - 20px);
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EndGame</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+    <script>
+      if (
+        localStorage.getItem("playerName") === null ||
+        localStorage.getItem("mostRecentScore") === null
+      ) {
+        window.location.assign("/");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="end" class="flex-center flex-column">
+        <h1 id="feedback"></h1>
+        <div class="flex-row">
+          <h3 class="flex-item">Score</h3>
+          <h3 class="flex-item">Correct</h3>
+        </div>
+        <div class="flex-row">
+          <h1 id="finalScore" class="flex-item">0</h1>
+          <h1 id="correctAnswers" class="flex-item">0 / 0</h1>
+        </div>
+        <form class="end-form-container">
+          <a href=""  onclick="saveHighScore(event)">
+            <button class="btn"  id="saveScoreBtn" type="submit">Play again</button>
+          </a>
+          
+        </form>
+
+        <!-- <a href="/character.html" class="btn" id="btn-play-again">Play Again</a> -->
+        <a href="/" class="btn" id="btn-go-home">Go Home</a>
+      </div>
+    </div>
+    <script src="javascript/end.js"></script>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+/* General styles */
+body {
+    color: #fff;
+}
+
+.choice-container-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}
+
+.choice-container {
+    width: calc(50% - 0.4rem); /* Adjust width to fit 2 choices in a row with a small gap */
+    border-radius: 4px;
+    font-size: 3rem;
+    background: rgb(18, 93, 255);
+    display: flex;
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
+    transform: scale(1.02);
+    transition: transform 100ms;
+}
+
+.choice-prefix {
+    padding: 3rem 2rem ;
+    color: white;
+}
+
+.choice-text {
+    padding: 4rem;
+    text-align: left; /* Center align the text */
+    width: 100%;
+}
+.correct {
+    background: linear-gradient(32deg, rgba(11, 223, 36)) 0%, rgb(41, 232, 111)100%;
+}
+
+.incorrect {
+    background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgb(244, 11) 100%);
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-item {
+    flex: 1;
+    text-align: center;
+}
+
+.hud-prefix {
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    font-size: 3rem;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid rgb(11, 223, 36);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: rgb(11, 223, 36);
+    width: 0%;
+}
+
+.question {
+    display: flex;
+}
+
+.image-with-border {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0 0 10px;
+    max-width: 100%;
+}
+
+/* Media queries */
+@media screen and (max-width: 1200px) {
+    /* Adjust styles for medium-sized screens */
+    .choice-container {
+        font-size: 2.5rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    h1 {
+        font-size: 3rem;
+        /* Adjust heading font size for smaller screens */
+    }
+
+    .choice-prefix,
+    .choice-text {
+        padding: 3rem;
+        /* Adjust padding for smaller screens */
+    }
+
+    .hud-prefix {
+        font-size: 2rem;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /* Adjust styles for small-sized screens */
+    .choice-container,
+    h1 {
+        font-size: 2rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    .choice-prefix,
+    .choice-text {
+        padding: 2.5rem;
+        /* Adjust padding for smaller screens */
+    }
+
+    .hud-prefix {
+        font-size: 1.5rem;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container,
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .choice-prefix,
+    .choice-text {
+        padding: 2rem;
+    }
+
+    .hud-prefix {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .choice-container {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .choice-prefix,
+    .choice-text {
+        padding: 1.5rem;
+    }
+
+    .hud-prefix {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+    .choice-container,
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .choice-prefix,
+    .choice-text {
+        font-size: 20px;
+        padding: 1rem;
+       
+    }
+
+    .hud-prefix {
+        font-size: 0.4rem;
+    
+    }
+}
