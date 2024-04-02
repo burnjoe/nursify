@@ -17,6 +17,7 @@ let availableQuestions = [];
 let countdown; // Declaring countdown variable
 
 let questions = [
+  //1
   {
     question:
       " You are assessing Patient's neck : Lymph nodes should not be ______ in a healthy adult patient",
@@ -31,9 +32,10 @@ let questions = [
     choice4_img: "",
     answer: 1,
   },
+  //2
   {
     question:
-      "To facilitate palpation of the thyroid gland, you instruct your patient to:",
+      "Now, you will examine Ana's thyroid gland: To facilitate palpation of the thyroid gland, you instruct Ana to:",
     img: "",
     choice1: "Rotate the neck.",
     choice1_img: "",
@@ -46,38 +48,40 @@ let questions = [
     answer: 3,
   },
 
+  //3
   {
     question:
       "When examining a client's thyroid gland, the nurse ensures this equipment is readily available.",
     img: "",
     choice1: "Penlight",
-    choice1_img: "",
+    choice1_img: "/images/quiz/q3-A.png",
     choice2: "Tongue depressor ",
-    choice2_img: "",
+    choice2_img: "/images/quiz/q3-B.png",
     choice3: "Centimeter-scale ruler ",
-    choice3_img: "",
+    choice3_img: "/images/quiz/q3-C.png",
     choice4: "Cup of water",
-    choice4_img: "",
+    choice4_img: "/images/quiz/q3-D.png",
     answer: 4,
   },
-
+  //4
   {
     question:
       "Ms. May reported a fluid-filled skin lesion on her right arm. Upon inspection, the nurse noticed that the lesion size was </= to 1cm. What type of skin lesion does Ms. May have? ",
     img: "",
     choice1: "papule ",
-    choice1_img: "",
+    choice1_img: "/images/quiz/q4-A.png",
     choice2: "vesicle",
-    choice2_img: "",
+    choice2_img: "/images/quiz/q4-B.png",
     choice3: "pustule ",
-    choice3_img: "",
+    choice3_img: "/images/quiz/q4-C.png",
     choice4: "macule ",
-    choice4_img: "",
+    choice4_img: "/images/quiz/q4-D.png",
     answer: 2,
   },
+  //5
   {
     question: "What does the condition in the picture indicate? ",
-    img: "/images/characters/condition.png",
+    img: "/images/quiz/q5-question.png",
     choice1: "not-intact cranial nerve  ",
     choice1_img: "",
     choice2: "damage to the frontal lobe of the brain. ",
@@ -88,10 +92,11 @@ let questions = [
     choice4_img: "",
     answer: 3,
   },
+  //6
   {
     question:
-      " The gag reflex is controlled by which of the following cranial nerves?  ",
-    img: "",
+      " You will assess Mark’s cranial nerve. You placed a tongue depressor on her posterior tongue and Mark gags.The gag reflex is controlled by which of the following cranial nerves?  ",
+    img: "/images/quiz/q6-question.png",
     choice1: "IX and X  ",
     choice1_img: "",
     choice2: "IV and VI ",
@@ -102,7 +107,7 @@ let questions = [
     choice4_img: "",
     answer: 1,
   },
-
+  //7
   {
     question:
       "Nurse Regie when doing his head-to-toe assessment on his client asks him to smile, frown, wrinkle his forehead, puff cheeks, raise eyebrows, and close his eyelids. In doing this the nurse is assessing which cranial nerve? ",
@@ -117,6 +122,7 @@ let questions = [
     choice4_img: "",
     answer: 2,
   },
+  //8
   {
     question:
       "When a nurse assesses a client's vision using either the Snellen chart or newspaper finger-wiggle test which cranial nerve are they assessing?  ",
@@ -132,6 +138,7 @@ let questions = [
     answer: 2,
     answer: 4,
   },
+  //9
   {
     question:
       "Nurse George has just assessed his client's articulation, language, and other aspects of his speech. In doing these which cranial nerves has he just assessed?  ",
@@ -146,6 +153,7 @@ let questions = [
     choice4_img: "",
     answer: 4,
   },
+  //10
   {
     question: " A balance dysfunction is probably due to which nerve:  ",
     img: "",
@@ -159,6 +167,7 @@ let questions = [
     choice4_img: "",
     answer: 3,
   },
+  //11
   {
     question:
       " When assessing a client's eyes the very first thing that a nurse should look at is?  ",
@@ -173,6 +182,7 @@ let questions = [
     choice4_img: "",
     answer: 3,
   },
+  //12
   {
     question:
       "Three things a nurse needs to check for when doing an examination on the eyes regarding the external structure is? ",
@@ -187,6 +197,7 @@ let questions = [
     choice4_img: "",
     answer: 1,
   },
+  //13
   {
     question:
       "When performing an assessment on a patient's eyes what might the nurse use the ophthalmoscope for?  ",
@@ -201,6 +212,7 @@ let questions = [
     choice4_img: "",
     answer: 4,
   },
+  //14
   {
     question:
       " The clinic nurse notes that the following several eye examinations, the physician has documented a diagnosis of legal blindness in the client's chart. The nurse reviews the results of the Snellen's chart test expecting to note which of the following?  ",
@@ -215,6 +227,7 @@ let questions = [
     choice4_img: "",
     answer: 4,
   },
+  //15
   {
     question: "The red light reflex is caused by the ",
     img: "",
@@ -228,6 +241,7 @@ let questions = [
     choice4_img: "",
     answer: 2,
   },
+  //16
   {
     question:
       "When examining the ear with an otoscope, the nurse notes that the tympanic membrane should appear:  ",
@@ -242,6 +256,7 @@ let questions = [
     choice4_img: "",
     answer: 2,
   },
+  //17
   {
     question:
       "If sound lateralizes to one ear when performing the Weber test, which of the following is occurring?  ",
@@ -256,27 +271,28 @@ let questions = [
     choice4_img: "",
     answer: 3,
   },
+  //18
   {
     question:
       "The nurse is performing a voice test to assess hearing. Which of the following describes the accurate procedure for performing this test? ",
-      img: "",
+    img: "",
     choice1:
       "Stand 4 feet away from the client to ensure that the client can hear at this distance. ",
-      choice1_img: "",
+    choice1_img: "",
     choice2:
       "Whisper a statement and ask the client to repeat it while covering one ear at a time.  ",
-      choice2_img: "",
+    choice2_img: "",
     choice3: "Whisper a statement with the examiner back facing the client  ",
     choice3_img: "",
     choice4: "Whisper a statement while the client blocks both ears. ",
     choice4_img: "",
     answer: 2,
- 
   },
+  //19
   {
     question:
       " A nurse has explained her intention to conduct Weber's test and Rinne's test. Which is the following pieces of equipment will the nurse require? ",
-      img: "",
+    img: "",
     choice1: "Ophthalmoscope  ",
     choice1_img: "",
     choice2: "Otoscope",
@@ -287,6 +303,7 @@ let questions = [
     choice4_img: "",
     answer: 4,
   },
+  //20
   {
     question:
       " Nerve deafness would most likely result from an injury or infection that damaged the: ",
@@ -299,7 +316,6 @@ let questions = [
     choice4: "Vestibuloochlear nerve ",
     choice4_img: "",
     answer: 4,
-
   },
 ];
 
@@ -385,9 +401,11 @@ function handleChoiceSelection(e, index) {
 
   if (isCorrect) {
     incrementScore(SCORE_POINTS);
+    showAlert("Correct! +10", "green");
     selectedChoice.parentElement.style.backgroundColor = "green";
   } else {
     decrementScore(SCORE_POINTS);
+    showAlert("Incorrect! -2", "red");
     selectedChoice.parentElement.style.backgroundColor = "red";
   }
 
@@ -409,6 +427,36 @@ function decrementScore(num) {
     score = Math.max(0, score - 2);
     scoreText.innerText = score;
   }
+}
+
+//alertbox
+function showAlert(message, backgroundColor) {
+  // Create alert box element
+  const alertBox = document.createElement("div");
+  alertBox.textContent = message;
+  alertBox.style.position = "fixed";
+  alertBox.style.top = "50%";
+  alertBox.style.left = "50%";
+  alertBox.style.transform = "translate(-50%, -50%)";
+  alertBox.style.padding = "20px";
+  alertBox.style.backgroundColor = backgroundColor;
+  alertBox.style.color = "white";
+  alertBox.style.borderRadius = "10px";
+  alertBox.style.textAlign = "center";
+  alertBox.style.lineHeight = "150px"; // Center text vertically
+  alertBox.style.boxShadow = "0px 0px 10px rgba(0, 0, 0, 0.5)";
+  alertBox.style.zIndex = "9999";
+  alertBox.style.width = "400px"; // Set width of the alert box
+  alertBox.style.height = "200px"; // Set height of the alert box
+  alertBox.style.fontSize = "18px"; // Set font size of the alert box
+
+  // Append alert box to the document body
+  document.body.appendChild(alertBox);
+
+  // Remove alert box after 2 seconds
+  setTimeout(() => {
+    alertBox.remove();
+  }, 1000);
 }
 
 startGame();
