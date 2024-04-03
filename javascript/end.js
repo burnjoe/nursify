@@ -41,7 +41,9 @@ sectionsToHide.forEach(function (section) {
 reviewResultBtn.addEventListener("click", function (event) {
   event.preventDefault();
 
-  loadResult();
+  if (resultList.innerHTML === "") {
+    loadResult();
+  }
 
   // Show the next section
   const reviewSection = document.querySelector("#review");
