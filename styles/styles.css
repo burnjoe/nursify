@@ -221,7 +221,17 @@ ul {
     font-size: 2.3rem;
 }
 
+
 /* Review Results */
+#resultList {
+    max-height: 60rem; /* Adjust the height as needed */
+    overflow-y: auto;
+}
+
+#resultList::-webkit-scrollbar {
+    width: 0; /* Set the width of the scrollbar to 0 */
+}
+
 .question {
     margin-bottom: 3rem;
 }
@@ -236,7 +246,8 @@ ul {
     color: red;
 }
 
-.fa-check, .fa-xmark {
+.fa-check,
+.fa-xmark {
     margin-left: 4rem;
     margin-right: 1rem;
 }
@@ -259,6 +270,8 @@ span {
     font-size: 4rem;
     color: gold;
 }
+
+
 
 @media (max-width: 768px) and (max-width: 480px) {
     #play-btn {
