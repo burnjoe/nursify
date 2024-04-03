@@ -10,6 +10,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <script>
+      if (localStorage.getItem("playerName") !== null && localStorage.getItem("mostRecentScore") !== null && localStorage.getItem("correctAnswers") !== null && localStorage.getItem("result") !== null) {
+        localStorage.removeItem("playerName");
+        localStorage.removeItem("mostRecentScore");
+        localStorage.removeItem("correctAnswers");
+        localStorage.removeItem("result");
+      }
+    </script>
   </head>
   <body>
     <div class="container ">
