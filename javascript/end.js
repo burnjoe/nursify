@@ -50,6 +50,16 @@ reviewResultBtn.addEventListener("click", function (event) {
   reviewSection.scrollIntoView({ behavior: "smooth" });
 });
 
+backBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+
+  // Show the previous section
+  const reviewSection = document.querySelector("#review");
+  reviewSection.style.display = "none"; // Hide the current section
+  resultSection.style.display = "block"; // Show the next section
+  resultSection.scrollIntoView({ behavior: "smooth" });
+});
+
 saveHighScore = (e) => {
   e.preventDefault();
   const score = {

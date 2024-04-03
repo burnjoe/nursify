@@ -172,7 +172,7 @@ input::placeholder {
     font-weight: 300;
 }
 
-#reviewResultBtn {
+#reviewResultBtn, #backBtn {
     border-radius: 10px;
     background: linear-gradient(90deg, rgb(96, 218, 3) 0%, rgb(45, 191, 19) 100%);
     ;
@@ -180,6 +180,9 @@ input::placeholder {
     font-weight: 300;
 }
 
+#backBtn {
+    margin-top: 3rem;
+}
 
 #btn-play-again {
     border-radius: 10px;
