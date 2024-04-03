@@ -804,6 +804,7 @@ choices.forEach((choice, index) => {
   );
 });
 
+
 // Function to handle choice selection
 function handleChoiceSelection(e, index) {
   if (!acceptingAnswers) return;
@@ -822,6 +823,25 @@ function handleChoiceSelection(e, index) {
     decrementScore(SCORE_POINTS);
     showAlert("Incorrect! -2", "red");
     selectedChoice.parentElement.style.backgroundColor = "red";
+  }
+
+  result = JSON.parse(localStorage.getItem("result")) || [];
+
+  console.log(selectedAnswer)
+
+  item = {
+    "question": currentQuestion.question,
+    "selected": currentQuestion[`choice${selectedAnswer}`],
+    "correct": currentQuestion[`choice${currentQuestion.answer}`],
+    "status": isCorrect
+  };
+
+  if (result.length === 0) {
+    result.push(item);
+    localStorage.setItem("result", JSON.stringify(result));
+  } else {
+    result.push(item);
+    localStorage.setItem("result", JSON.stringify(result));
   }
 
   clearInterval(countdown);

@@ -52,8 +52,12 @@ h2 {
     justify-content: space-between;
 }
 
-.flex-item {
-    margin: 0 8rem;
+.sub-head {
+    width: 26rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
 }
 
 .flex-column {
@@ -68,6 +72,10 @@ h2 {
 
 .justify-center {
     justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
 }
 
 .text-center {
@@ -164,6 +172,14 @@ input::placeholder {
     font-weight: 300;
 }
 
+#reviewResultBtn {
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgb(96, 218, 3) 0%, rgb(45, 191, 19) 100%);
+    ;
+    color: #fff;
+    font-weight: 300;
+}
+
 
 #btn-play-again {
     border-radius: 10px;
@@ -200,6 +216,45 @@ input::placeholder {
 /* Leaderboard */
 ul {
     font-size: 2.3rem;
+}
+
+/* Review Results */
+.question {
+    margin-bottom: 3rem;
+}
+
+.correct-answer {
+    margin-left: 2rem;
+    color: limegreen;
+}
+
+.wrong-answer {
+    margin-left: 2rem;
+    color: red;
+}
+
+.fa-check, .fa-xmark {
+    margin-left: 4rem;
+    margin-right: 1rem;
+}
+
+.item {
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #fff;
+    border-style: solid;
+    padding: 20px;
+    margin-bottom: 2rem;
+    width: 68rem;
+}
+
+li {
+    list-style: none;
+}
+
+span {
+    font-size: 4rem;
+    color: gold;
 }
 
 @media (max-width: 768px) and (max-width: 480px) {
